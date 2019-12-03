@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    background-color: #2b2e4a;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.welcome-message {
+    position: relative;
+    background-color: #2b2e4a;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    width: 575px;
+    border-radius: 5px;
+}
+
+.welcome-message > a > img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.gmpa-btn {
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid #903749;
+    border-radius: 5px;
+    padding: 25px;
+    color: #903749;
+    transition: all 0.6s ease-in-out;
+    text-decoration: none;
+}
+
+.server-list-table > table {
+    width: 97%;
+    text-align: center;
+    padding: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+}
+.server-list-table {
+    height: 120px;
+    overflow: auto;
+}
+.server-list-table > table > thead > tr > th {
+    border: 1px solid #e84545;
+    background-color: #903749;
+    padding: 3px;
+}
+
+.server-list-table > table > tbody > tr > td {
+    border: 1px dotted #e84545;
+    padding: 3px;
+}
+
+@media(max-width:576px) {
+    .welcome-message {
+        top: 15%;
+        width: 90%;
+    }
+    
+    .gmpa-btn {
+        display: block;
+        padding: 13px 10px;
+        margin-bottom: 12px;
+    }
+    
+    .welcome-message > a > img {
+        margin-bottom: 12px;
+        width: 80%;
+        height: 80%;
+    }
+    
+    .server-list-table > table {
+        font-size: 10px;
+    }
+}
+
+.gmpa-btn:hover {
+    text-decoration: none;
+    color: #2b2e4a;
+    background-color: #e84545;
+    border-color: #e84545;
+}
+
+.players {
+    position: absolute;
+    right: 0;
+}
